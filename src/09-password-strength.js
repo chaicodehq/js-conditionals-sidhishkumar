@@ -65,11 +65,13 @@ var level = ''
    level = 'weak'
  else if(criteriaRule >= 2 && criteriaRule <= 3)
    level = 'medium'
-else if( criteriaRule > 3 && criteriaRule <= 5)
+else if( criteriaRule > 3 && criteriaRule < 5)
   level = 'strong'
 else if(criteriaRule == 5 )
   level = 'very strong'
 
+
+console.log(level)
 return level
 
 }
